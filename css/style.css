@@ -14,11 +14,30 @@ body {
     background-repeat: no-repeat;
 }
 
+.frame {
+    position: fixed;
+    margin-right: 5%;
+    width: 300px;
+    height: 600px;
+    z-index: -1;
+    background-color: white;
+}
+
+.enemyFrame{
+    position: fixed;
+    margin-right: 5%;
+    width: 300px;
+    height: 600px;
+    z-index: -1;
+    background-color: white;
+}
+
 .playerSprite {
     position: relative;
     box-sizing: border-box;
     margin-top: 5%;
     margin-left: 5%;
+    z-index: 1;
 }
 
 .enemySprite {
