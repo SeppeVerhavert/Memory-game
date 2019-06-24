@@ -1,6 +1,8 @@
-let cards = document.querySelectorAll(".cards"); 
-cards.addEventListener("click", showCard);
+const cards = document.querySelectorAll('.memoryCard');
 
-function showCard() {
-    console.log("clicked card");
+function flipCard() {
+    this.classList.toggle('flip')
 }
+
+cards.forEach(card => card.addEventListener('click', flipCard));
+
