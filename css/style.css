@@ -1,4 +1,42 @@
-img {
-    width:220px;
-    height:220px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: #060AB2;
+}
+
+.container {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid lime;
+}
+
+.memoryCard {
+    width: calc(25% - 10px);
+    height: calc(33.33% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+}
+
+.memoryCard:active{
+    transform: scale(.97);
+    transition: transform .2s;
+}
+
+.frontCard, .backCard {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #1c7ccc;
 }
