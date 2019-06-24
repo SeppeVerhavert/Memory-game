@@ -8,6 +8,10 @@ body {
     height: 100vh;
     display: flex;
     background-color: #060AB2;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a42fa3de-8115-478e-bc11-6bcc5092b69e/d7dyidd-3bdcd06f-4928-43b8-abbb-96843224fc5f.jpg/v1/fill/w_1024,h_523,q_75,strp/mage_duel___nature_and_destruction_by_gjaldir_d7dyidd-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTIzIiwicGF0aCI6IlwvZlwvYTQyZmEzZGUtODExNS00NzhlLWJjMTEtNmJjYzUwOTJiNjllXC9kN2R5aWRkLTNiZGNkMDZmLTQ5MjgtNDNiOC1hYmJiLTk2ODQzMjI0ZmM1Zi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.L2NFOKA2xSDgXzlBurtrmKXrXCFimHKYURKGcekU27M);
+    background-position: 50% 50%; 
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -21,7 +25,7 @@ body {
 
 .memoryCard {
     width: calc(25% - 10px);
-    height: calc(33.33% - 10px);
+    height: calc(25% - 10px);
     margin: 5px;
     position: relative;
     transform: scale(1);
@@ -43,7 +47,6 @@ body {
 .back-face {
     width: 100%;
     height: 100%;
-    padding: 20px;
     position: absolute;
     border-radius: 5px;
     background: #1c7ccc;
