@@ -27,6 +27,7 @@ body {
     transform: scale(1);
     transform-style: flat;
     transition: transform .5s;
+    transform-style: preserve-3d;
 }
 
 .memoryCard:active{
