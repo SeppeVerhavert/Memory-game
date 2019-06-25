@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Butcherman&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 
 * {
     padding: 0;
@@ -26,6 +27,29 @@ body {
 
 /* THIS IS THE CARDS SECTION */
 
+#Intro {
+    width: 1120px;
+    height: 620px;
+    margin: auto;
+    position: absolute;
+    background-color: rgb(172, 48, 69);
+    z-index: 1;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 1.75rem;
+    color: white;
+}
+
+button {
+    background-color: rgb(212, 55, 81);
+    border: none;
+    padding: 15px 32px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 1.75rem;
+    color: white;
+}
+
 .container {
     width: 1140px;
     height: 640px;
@@ -33,13 +57,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
-    background-color: rgb(172, 48, 69);
     padding-bottom: 60px;
     padding-left: 10px;
-    border: 3px solid rgb(119, 25, 41);
     text-shadow: 1px 1px 2px red, 0 0 1em rgb(53, 0, 0), 0 0 0.2em rgb(53, 0, 0);
     -webkit-box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.75);
+    background-color: rgb(172, 48, 69);
+    border: 3px solid rgb(119, 25, 41);
     box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.75);
 }
 

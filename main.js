@@ -1,5 +1,6 @@
 const cards = document.querySelectorAll('.memoryCard');
 window.addEventListener("load", shuffle);
+document.getElementById("startGame").addEventListener('click', removeIntro);
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -7,6 +8,10 @@ let firstCard, secondCard;
 let secondTurn = false;
 let WerewolfCount = 0;
 let VillagerCount = 0;
+
+function removeIntro() {
+    document.getElementById("Intro").style.display = "none";
+}
 
 function flipCard() {
     if (lockBoard) return;
