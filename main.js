@@ -25,7 +25,6 @@ function checkForMatch() {
     if (firstCard.dataset.name === secondCard.dataset.name) {
         disableCards();
         secondTurn = false;
-        console.log("secondTurn = false");
     }
     else {
         unflipCards();
@@ -49,12 +48,10 @@ function unflipCards() {
     if (secondTurn) {
         setTimeout(shuffle,2000);
         secondTurn = false;
-        console.log("secondTurn = false");
     }
 
     if (!secondTurn) {
         secondTurn = true;
-        console.log("secondTurn = true");
     }
 }
 
@@ -63,7 +60,6 @@ function shuffle() {
         let randomPos = Math.floor(Math.random()*12);
         card.style.order = randomPos;
     })
-    console.log("shuffle");
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
