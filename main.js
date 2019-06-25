@@ -9,6 +9,7 @@ let WerewolfCount = 0;
 let VillagerCount = 0;
 
 function flipCard() {
+    gameOver();
     if (lockBoard) return;
     this.classList.toggle('flip')
 
@@ -72,14 +73,23 @@ function checkTurn() {
 function countWerewolves() {
     if (firstCard.dataset.name === "Werewolf") {
         WerewolfCount += 1;
-        document.getElementById('werewolvesCount').innerHTML = WerewolfCount;
+        document.getElementById("werewolvesCount").innerHTML = WerewolfCount;
     }
 }
 
 function countVillagers() {
     if (firstCard.dataset.name === "Villager") {
         VillagerCount += 1;
-        document.getElementById('villagersCount').innerHTML = VillagerCount;
+        document.getElementById("villagersCount").innerHTML = VillagerCount;
+    }
+}
+
+function gameOver() {
+    if (VillagerCount === 5) {
+        document.getElementById("gameover").style.display = 'flex';
+    }
+    if (WerewolfCount === 3) {
+        document.getElementById("victory").style.display = 'flex';
     }
 }
 
