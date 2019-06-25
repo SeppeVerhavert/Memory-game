@@ -5,8 +5,8 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 let secondTurn = false;
-// console.log("onload");
-// console.log(secondTurn);
+let WerewolfCount = 0;
+let VillagerCount = 0;
 
 function flipCard() {
     if (lockBoard) return;
@@ -27,15 +27,13 @@ function checkForMatch() {
     if (firstCard.dataset.name === secondCard.dataset.name) {
         disableCards();
         secondTurn = false;
-        // console.log("disableCards");
-        // console.log("secondTurn = " + secondTurn);
+        countWerewolves();
+        countVillagers();
     }
     else {
         unflipCards();
         checkTurn();
-        // console.log("unflipCards");
-        // console.log("secondTurn = " + secondTurn);
-    }   
+    }
 }
 
 function disableCards() {
@@ -55,21 +53,33 @@ function unflipCards() {
 
 function shuffle() {
     cards.forEach(card => {
-        let randomPos = Math.floor(Math.random()*12);
+        let randomPos = Math.floor(Math.random() * 12);
         card.style.order = randomPos;
     })
     secondTurn = false;
-    // console.log("shuffle");
 }
 
 function checkTurn() {
     if (secondTurn) {
-        setTimeout(shuffle,2000);
+        setTimeout(shuffle, 2000);
         secondTurn = false;
     }
-
     if (!secondTurn) {
         secondTurn = true;
+    }
+}
+
+function countWerewolves() {
+    if (firstCard.dataset.name === "Werewolf") {
+        WerewolfCount += 1;
+        document.getElementById('werewolvesCount').innerHTML = WerewolfCount;
+    }
+}
+
+function countVillagers() {
+    if (firstCard.dataset.name === "Villager") {
+        VillagerCount += 1;
+        document.getElementById('villagersCount').innerHTML = VillagerCount;
     }
 }
 

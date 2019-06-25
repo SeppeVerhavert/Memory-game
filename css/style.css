@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Butcherman&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -10,6 +12,23 @@ body {
     background-image: url(http://varg.wdfiles.com/local--files/5e-curse-annals/WoW.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.score {
+    margin-top: -25px;
+    padding-left: 25px;
+    padding-top: -5px;
+    width: 1140px;
+    height:50px;
+    background-color: rgb(155, 41, 60);
+    font-family: 'Butcherman', cursive;
+    font-size: 1.75rem;
+    color: aliceblue;
+    text-align: center;
+} 
+
+#villagersCount {
+    text-align: end;    
 }
 
 /* THIS IS THE CARDS SECTION */
