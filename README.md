@@ -16,7 +16,7 @@ We want to recreate the game memory. It is a game where you have a bunch of card
 
 ### The Plot
 
-This memory game is made in the style of 'The Werewolves of Millers Hollow'. In this game we find ourselves in the otherwise peaceful village of Millers Hollow, however something is amiss. At innocent villagers turn to werewolves and murder the other innocent villagers in an attempt to take over the village. The villagers decide to act against these mysterious murders.
+This memory game is made in the style of 'The Werewolves of Millers Hollow'. In this game we find ourselves in the otherwise peaceful village of Millers Hollow, however something is amiss. At night villagers turn to werewolves and murder the other innocent villagers in an attempt to take over the village. The villagers decide to act against these mysterious murders.
 
 ### How to play
 
@@ -29,5 +29,5 @@ Play the game at: [link](https://seppeverhavert.github.io/Memory-game/)
 
 ##  Credits
 
-Card artwork by [Mathew Sisson](https://www.playwerewolf.co/).
+Card artwork by [Mathew Sisson](https://www.playwerewolf.co/).  
 Background artwork by [Stanton Feng](https://www.artstation.com/artwork/2xbxg).
