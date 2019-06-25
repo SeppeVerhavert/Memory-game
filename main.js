@@ -9,6 +9,8 @@ let secondTurn = false;
 let WerewolfCount = 0;
 let VillagerCount = 0;
 
+cards.forEach(card => card.addEventListener('click', flipCard));
+
 function removeIntro() {
     document.getElementById("Intro").style.display = "none";
 }
@@ -99,5 +101,3 @@ function gameOver() {
         cards.forEach(card => card.classList.toggle('flip'));
     }
 }
-
-cards.forEach(card => card.addEventListener('click', flipCard));
