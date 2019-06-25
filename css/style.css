@@ -9,17 +9,14 @@
 body {
     height: 100vh;
     display: flex;
-    background-image: url(http://varg.wdfiles.com/local--files/5e-curse-annals/WoW.jpg);
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/000/234/981/large/kd-stanton-.jpg?1443931259);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Butcherman', cursive;
 }
 
 .score {
-    margin-top: -25px;
-    padding-left: 25px;
-    padding-top: -5px;
-    width: 1140px;
+    width: 1400px;
     height:50px;
     background-color: rgb(172, 48, 69);
     text-align: center;
@@ -36,6 +33,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
+    background-color: rgb(172, 48, 69);
+    padding-bottom: 60px;
+    padding-left: 10px;
+    border: 3px solid rgb(119, 25, 41);
 }
 
 .memoryCard {

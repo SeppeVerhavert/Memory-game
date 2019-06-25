@@ -93,7 +93,6 @@ function gameOver() {
         document.getElementById("victory").style.display = 'flex';
         cards.forEach(card => card.classList.toggle('flip'));
     }
-    
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
