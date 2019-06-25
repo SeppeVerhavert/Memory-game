@@ -8,7 +8,6 @@ body {
     height: 100vh;
     display: flex;
     background-image: url(http://varg.wdfiles.com/local--files/5e-curse-annals/WoW.jpg);
-    background-position: 50% 50%; 
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -25,7 +24,7 @@ body {
 }
 
 .memoryCard {
-    width: calc(15% - 10px);
+    width: calc(16.5% - 10px);
     height: calc(33.33% - 10px);
     margin: 5px;
     position: relative;
