@@ -9,7 +9,6 @@ let WerewolfCount = 0;
 let VillagerCount = 0;
 
 function flipCard() {
-    gameOver();
     if (lockBoard) return;
     this.classList.toggle('flip')
 
@@ -35,6 +34,7 @@ function checkForMatch() {
         unflipCards();
         checkTurn();
     }
+    gameOver();
 }
 
 function disableCards() {
@@ -87,10 +87,13 @@ function countVillagers() {
 function gameOver() {
     if (VillagerCount === 5) {
         document.getElementById("gameover").style.display = 'flex';
+        cards.forEach(card => card.classList.toggle('flip'));
     }
     if (WerewolfCount === 3) {
         document.getElementById("victory").style.display = 'flex';
+        cards.forEach(card => card.classList.toggle('flip'));
     }
+    
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
