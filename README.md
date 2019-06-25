@@ -24,9 +24,7 @@ In this game you try to make pairs like in 'Memory'. By doing so you kill the pa
 
 ##  Live Version
 
-Play the game at:
-
-link
+Play the game at: [link](https://seppeverhavert.github.io/Memory-game/)
 
 
 ##  Credits
