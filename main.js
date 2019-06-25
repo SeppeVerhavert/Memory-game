@@ -43,6 +43,8 @@ function unflipCards() {
         secondCard.classList.remove('flip');
         lockBoard = false;
     }, 1500);
+
+    setTimeout(shuffle,2000);
 }
 
 function shuffle() {
@@ -50,9 +52,7 @@ function shuffle() {
         let randomPos = Math.floor(Math.random()*12);
         card.style.order = randomPos;
     })
-    console.log("shuffled");
 }
-
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 

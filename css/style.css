@@ -7,58 +7,16 @@
 body {
     height: 100vh;
     display: flex;
-    background-color: #060AB2;
-    background-image: url(http://getwallpapers.com/wallpaper/full/5/d/a/59857.jpg);
+    background-image: url(https://stmed.net/sites/default/files/fantasy-battle-wallpapers-28136-5792953.jpg);
     background-position: 50% 50%; 
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.frame {
-    position: fixed;
-    margin-right: 5%;
-    width: 300px;
-    height: 600px;
-    z-index: -1;
-    background-color: white;
-}
-
-.enemyFrame{
-    position: fixed;
-    margin-right: 5%;
-    width: 300px;
-    height: 600px;
-    z-index: -1;
-    background-color: white;
-}
-
-.playerSprite {
-    position: relative;
-    box-sizing: border-box;
-    margin-top: 5%;
-    margin-left: 5%;
-    z-index: 1;
-}
-
-.enemySprite {
-    position: relative;
-    box-sizing: border-box;
-    margin-top: 5%;
-    margin-right: 5%;
-}
-
-.player {
-    width: 300px;
-    height: 600px;
-}
-
-.enemy {
-    width: 300px;
-    height: 600px;
-}
+/* THIS IS THE CARDS SECTION */
 
 .container {
-    width: 640px;
+    width: 1140px;
     height: 640px;
     margin: auto;
     display: flex;
@@ -67,8 +25,8 @@ body {
 }
 
 .memoryCard {
-    width: calc(25% - 10px);
-    height: calc(25% - 10px);
+    width: calc(15% - 10px);
+    height: calc(33.33% - 10px);
     margin: 5px;
     position: relative;
     transform: scale(1);
@@ -92,7 +50,6 @@ body {
     height: 100%;
     position: absolute;
     border-radius: 5px;
-    background: #1c7ccc;
     backface-visibility: hidden;
 }
 
