@@ -9,14 +9,14 @@
 body {
     height: 100vh;
     display: flex;
-    background-image: url(https://cdnb.artstation.com/p/assets/images/images/000/234/981/large/kd-stanton-.jpg?1443931259);
+    background-image: url(../assets/Images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Butcherman', cursive;
 }
 
 .score {
-    width: 1400px;
+    width: 1140px;
     height:50px;
     background-color: rgb(172, 48, 69);
     text-align: center;
