@@ -17,6 +17,7 @@ function removeIntro() {
 
 function flipCard() {
     if (lockBoard) return;
+    if (this === firstCard) return;
     this.classList.toggle('flip')
 
     if (!hasFlippedCard) {
@@ -33,9 +34,6 @@ function flipCard() {
 function checkForMatch() {
     if (firstCard.dataset.name === secondCard.dataset.name) {
         disableCards();
-        secondTurn = false;
-        countWerewolves();
-        countVillagers();
     }
     else {
         unflipCards();
@@ -47,6 +45,9 @@ function checkForMatch() {
 function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
+    secondTurn = false;
+    countWerewolves();
+    countVillagers();
 }
 
 function unflipCards() {
