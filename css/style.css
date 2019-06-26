@@ -17,8 +17,8 @@ body {
 }
 
 .score {
-    width: 1140px;
-    height:50px;
+    width: 940px;
+    height: 50px;
     background-color: rgb(172, 48, 69);
     text-align: center;
     font-size: 1.75rem;
@@ -29,7 +29,7 @@ body {
 
 #Intro {
     width: 1120px;
-    height: 620px;
+    height: 630px;
     margin: auto;
     position: absolute;
     background-color: rgb(172, 48, 69);
@@ -40,14 +40,30 @@ body {
     color: white;
 }
 
-button {
-    background-color: rgb(212, 55, 81);
+.optionBtn {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    position: relative;
     border: none;
-    padding: 15px 32px;
+    background-color: rgb(172, 48, 69);
+    z-index: 2;
     font-family: 'Indie Flower', cursive;
     text-align: center;
     font-size: 1.75rem;
     color: white;
+}
+
+#startGame {
+    background-color: rgb(212, 55, 81);
+    border: none;
+    padding: 15px 32px;
+    margin: 5px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 1.75rem;
+    color: white;
+    border-radius: 10px;
 }
 
 .container {
@@ -81,6 +97,10 @@ button {
 .memoryCard:active{
     transform: scale(.97);
     transition: transform .2s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: rgb(221, 131, 14);
 }
 
 .memoryCard.flip {
@@ -118,7 +138,7 @@ button {
     display: none;
     position: absolute;
     width: 1140px;
-    height: 640px;
+    height: 580px;
     margin: auto;
     margin-top: 100px;
     text-align: center;
