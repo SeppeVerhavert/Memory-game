@@ -109,7 +109,7 @@ button {
     margin-top: 20px;
     text-align: center;
     font-size: 7rem;
-    color: rgb(172, 48, 69);
+    color: rgb(161, 26, 26);
     text-shadow: 1px 1px 2px red, 0 0 1em rgb(53, 0, 0), 0 0 0.2em rgb(53, 0, 0);
     z-index: 1;
 }
@@ -123,7 +123,7 @@ button {
     margin-top: 100px;
     text-align: center;
     font-size: 7rem;
-    color: rgb(52, 172, 48);
-    text-shadow: 1px 1px 2px rgb(72, 255, 0), 0 0 1em rgb(26, 92, 23), 0 0 0.2em rgb(26, 92, 23);
+    color: rgb(221, 131, 14);
+    text-shadow: 1px 1px 2px orange, 0 0 0.5em rgb(117, 48, 2), 0 0 0.2em rgb(117, 48, 2);
     z-index: 1;
 }
