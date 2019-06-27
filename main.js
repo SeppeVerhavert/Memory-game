@@ -2,6 +2,12 @@ const cards = document.querySelectorAll('.memoryCard');
 window.addEventListener("load", shuffle);
 document.getElementById("startGame").addEventListener('click', removeIntro);
 
+let werewolvesDiv = document.getElementById("werewolvesCount");
+let villagersDiv = document.getElementById("villagersCount");
+let lossScreen = document.getElementById("gameover");
+let winScreen = document.getElementById("victory")
+let intro = document.getElementById("Intro");
+
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -12,7 +18,7 @@ let VillagerCount = 0;
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 function removeIntro() {
-    document.getElementById("Intro").style.display = "none";
+    intro.style.display = "none";
 }
 
 function flipCard() {
@@ -39,7 +45,7 @@ function checkForMatch() {
         unflipCards();
         checkTurn();
     }
-    gameOver();
+    checkGameOver();
 }
 
 function disableCards() {
@@ -81,24 +87,24 @@ function checkTurn() {
 function countWerewolves() {
     if (firstCard.dataset.name === "Werewolf") {
         WerewolfCount += 1;
-        document.getElementById("werewolvesCount").innerHTML = WerewolfCount;
+        werewolvesDiv.innerHTML = WerewolfCount;
     }
 }
 
 function countVillagers() {
     if (firstCard.dataset.name === "Villager") {
         VillagerCount += 1;
-        document.getElementById("villagersCount").innerHTML = VillagerCount;
+        villagersDiv.innerHTML = VillagerCount;
     }
 }
 
-function gameOver() {
+function checkGameOver() {
     if (VillagerCount === 5) {
-        document.getElementById("gameover").style.display = 'flex';
+        lossScreen.style.display = 'flex';
         cards.forEach(card => card.classList.toggle('flip'));
     }
     if (WerewolfCount === 3) {
-        document.getElementById("victory").style.display = 'flex';
+        winScreen.style.display = 'flex';
         cards.forEach(card => card.classList.toggle('flip'));
     }
 }
