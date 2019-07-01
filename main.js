@@ -63,7 +63,7 @@ function unflipCards() {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
         lockBoard = false;
-    }, 1500);
+    }, 1000);
 }
 
 function shuffle() {
@@ -76,7 +76,7 @@ function shuffle() {
 
 function checkTurn() {
     if (secondTurn) {
-        setTimeout(shuffle, 2000);
+        setTimeout(shuffle, 1300);
         secondTurn = false;
     }
     if (!secondTurn) {
